@@ -251,6 +251,24 @@ a {
   transform-origin: bottom left;
 }
 
+.content-button {
+  margin: 0 auto;
+  width: 10%;
+  margin-bottom: 50px;
+}
+
+.buy-button {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: orange; 
+  font-size: 20px;
+  border-bottom: 4px solid #B78F24;
+  color: white;
+  outline: none;
+  width: 130px;
+  visibility: hidden;
+}
+
 .content-hallscreen {
   width: 60%;
   border: 1px solid gray;
@@ -304,6 +322,11 @@ a {
 .color {
   color: white;
   background-color: orange;
+}
+
+.booked {
+  color: white;
+  background-color: red;
 }
 
 /* .seat-1 {
