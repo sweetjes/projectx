@@ -1,4 +1,4 @@
-var selected = document.addEventListener("click", function(event) {
+var selected = document.addEventListener("click", function (event) {
     if (event.target.classList.contains("content-hallseats-row-seat")) {
         event.toElement.classList.add("color");
         document.querySelector(".buy-button").style.visibility = "visible";
@@ -144,14 +144,14 @@ for (i = 0; i < bighall.length; i++) {
     }
 }
 
-/* var buyButton = document.querySelector(".buy-button");
-buyButton.onclick = function() {
-  event.toElement.style.background = "red";
-}*/
 
-let bg = document.querySelectorAll('.content-hallseats-row-seat');
-for(i=0;i<bg.length;i++){
-if(bg[i].classList.contains('color')) {
-bg[i].style.background = 'red';
-}
-}
+let seat = document.querySelectorAll('.content-hallseats-row-seat'), 
+buyButton = document.querySelector('.buy-button');
+
+buyButton.addEventListener('click', function () {
+    for (i = 0; i < seat.length; i++) {
+        if (seat[i].classList.contains('color')) {
+            seat[i].style.background = 'red'; 
+        }
+    }
+});
