@@ -23,8 +23,8 @@
   "scripts": {
     "server": "live-server src",
     "validate-html": "html-validate src/index.html",
-    "stylelint": "stylelint src/**/*.css",
-    "jshint": "jshint src/",
+    "stylelint": "stylelint src/css/style.css",
+    "jshint": "jshint src/js/script.js",
     "watch": "npm-watch",
     "dev-mode": "npm-run-all --parallel server watch",
     "postinstall": "npm i -g live-server html-validate jshint",
@@ -49,5 +49,7 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }

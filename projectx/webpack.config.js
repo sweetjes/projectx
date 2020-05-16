@@ -9,7 +9,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: './main.js',
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
   optimization: {
@@ -30,7 +30,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css'
-  })
+    })
   ],
   module: {
     rules: [

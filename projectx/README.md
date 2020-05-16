@@ -29,7 +29,7 @@ npm run jshint
 **Валидация CSS**
 
 ```
-npm run validate-css
+npm run stylelint
 ```
 
 **Запуск watcher'а (валидаторы)**
